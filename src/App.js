@@ -11,6 +11,7 @@ import Product from "./pages/shop/product";
 
 function App() {
 
+  const [cartItems, setCartItems] = useState([]);
   return (
     <div className="App">
       <Router>
@@ -19,7 +20,7 @@ function App() {
           <Route path="/signin" element={<SignIn />} />
           <Route path="/home" element={<Home />} />
           <Route path="/" element={<Shop />} />
-          <Route path="/cart" element={<Cart />} />
+          <Route path="/cart" element={<Cart />} cartItems={cartItems}/>
         </Routes>
       </Router>
     </div>
