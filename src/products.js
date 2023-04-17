@@ -1,19 +1,19 @@
-import product1 from "./images/IPhone.png";
+import product1 from "./images/IPhoneCase.jpg";
 import product2 from "./images/Macbook.png";
 import product3 from "./images/CanonCamera.png";
 import product4 from "./images/Carphoneholder.jpg";
 import product5 from "./images/CameraTripod.jpg";
 import product6 from "./images/LedLights.png";
-import product7 from "./images/IPhoneCase.jpg";
+import product7 from "./images/IPhone.png";
 import product8 from "./images/WirelessHeadphones.jpg";
 import product9 from "./images/WirelessLampCharger.jpg";
 
 export const PRODUCTS = [
   {
-    id: 1,
-    productName: "IPhone 14 Pro",
-    price: 999.99,
-    productImage: product1,
+      id: 1,
+      productName: "IPhone 13,14 Case",
+      price: 11.99,
+      productImage: product1,  
   },
   {
     id: 2,
@@ -47,8 +47,8 @@ export const PRODUCTS = [
   },
   {
     id: 7,
-    productName: "IPhone 13,14 Case",
-    price: 11.99,
+    productName: "IPhone 14 Pro",
+    price: 999.99,
     productImage: product7,
   },
   {
