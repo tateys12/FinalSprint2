@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Route } from "react-router-dom";
 import Shop from "./shop/Shop";
+import "../../src/pages/SignIn.css"
 
 
 function Login() {
@@ -18,7 +19,7 @@ function Login() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (username === "admin" && password === "admin") {
+    if (username === "user" && password === "user") {
       alert("Login successful!");
     } else {
       alert("Login failed. Please try again.");
@@ -41,12 +42,12 @@ function Login() {
           <div className="modal-content">
             <form onSubmit={handleSubmit}>
               <label>
-                Username:
+                Username: user
                 <input type="text" value={username} onChange={handleUsernameChange} />
               </label>
               <br />
               <label>
-                Password:
+                Password: user
                 <input
                   type="password"
                   value={password}
@@ -56,7 +57,7 @@ function Login() {
               <br />
               <button type="submit">Submit</button>
             </form>
-            <button onClick={handleModalClose}>Close</button>
+            <button onClick={handleModalClose} className="closebttn">Close</button>
           </div>
         </div>
       )}

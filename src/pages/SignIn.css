@@ -1,7 +1,57 @@
-.signin{
-    margin: 0 auto;
+  /* Style the modal */
+  .modal {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  /* Style the modal content */
+  .modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  /* Style the form input fields */
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the form submit button */
+  button[type="submit"] {
+    background-color:rgba(41, 63, 104, 0.863);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Style the form close button */
+ .closebttn {
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Style the form close button on hover */
+  button:hover {
+    background-color: #d32f2f;
+  }
+  
